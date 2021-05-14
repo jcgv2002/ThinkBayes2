@@ -33,6 +33,8 @@ from operator import itemgetter
 
 import numpy as np
 import pandas as pd
+import matplotlib as plt
+
 
 import scipy
 from scipy import stats
@@ -1216,7 +1218,7 @@ class Cdf:
         """
         return self.Prob(x) * 100
 
-    def PercentileRanks(self, xs):
+    def PercentileRanks(self, x):
         """Returns the percentile ranks of the values in xs.
 
         xs: potential value in the CDF
