@@ -1218,14 +1218,14 @@ class Cdf:
         """
         return self.Prob(x) * 100
 
-    def PercentileRanks(self, x):
+    def PercentileRanks(self, xs):
         """Returns the percentile ranks of the values in xs.
 
         xs: potential value in the CDF
 
         returns: array of percentile ranks in the range 0 to 100
         """
-        return self.Probs(x) * 100
+        return self.Probs(xs) * 100
 
     def Random(self):
         """Chooses a random value from this distribution."""
